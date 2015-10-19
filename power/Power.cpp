@@ -18,16 +18,25 @@
 
 #include <log/log.h>
 
+#include <fstream>
 #include <hardware/hardware.h>
 #include <hardware/power.h>
 
 #include "Power.h"
+
+#define TAP_TO_WAKE_NODE "/dev/mokee.touch@1.0/dt2w"
 
 namespace android {
 namespace hardware {
 namespace power {
 namespace V1_0 {
 namespace implementation {
+
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
+}
 
 Power::Power(power_module_t *module) : mModule(module) {
     if (mModule)
@@ -57,6 +66,12 @@ Return<void> Power::powerHint(PowerHint hint, int32_t data)  {
 }
 
 Return<void> Power::setFeature(Feature feature, bool activate)  {
+#ifdef TAP_TO_WAKE_NODE
+    if (feature == Feature::POWER_FEATURE_DOUBLE_TAP_TO_WAKE) {
+        set(TAP_TO_WAKE_NODE, activate ? 1 : 0);
+        return Void();
+    }
+#endif
     if (mModule->setFeature)
         mModule->setFeature(mModule, static_cast<feature_t>(feature),
                 activate ? 1 : 0);
