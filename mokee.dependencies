@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_device_meizu_sm8150-common",
+    "target_path": "device/meizu/sm8150-common"
+  },
+  {
+    "repository": "android_vendor_meizu_m1973",
+    "target_path": "vendor/meizu/m1973"
+  }
+]
