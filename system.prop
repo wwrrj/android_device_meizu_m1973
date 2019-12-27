@@ -1,0 +1,30 @@
+#FLYME_MMF_VIDEO Remove AAC AC3 AVI 3GP MKV MP3 OGG WAV FLAC APE MOV 63963135 ->46439132
+vendor.mm.enable.qcom_parser=46439132
+
+#Telecom_BT,suheng fix#757065,disable wireless charge
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+
+#NFC for uniconpay
+ro.product.cuptsm=MEIZU|ESE|01|02|80T
+
+ #IOP properties
+vendor.iop.enable_uxe=0
+
+#Camera_Edit herongfeng@meizu.com modify
+ro.vendor.camera.no_vts=1
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.meizu.bspqa.camera,com.meizu.media.camera
+#Camera_Edit end
+
+#FLYME_MMF_VIDEO:hvx hwjpeg{@
+persist.hvx.hwjpeg.enable=true
+#@}
+
+#FLYME_MMF_AUDIO: AUDIO_ROTATION & Nmdplayer hifi support {@
+ro.audio.monitorRotation=true
+ro.hardware.hifi.support=true
+#@}
+
+#BSP Richard for camera fifo{@
+camera.fifo.disable=1
+##@}
