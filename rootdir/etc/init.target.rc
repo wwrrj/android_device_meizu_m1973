@@ -1,3 +1,6 @@
 on init
     chown system system /sys/class/leds/breath/blink
     chown system system /sys/class/leds/breath/brightness
+
+on early-fs
+    mount none /system/etc/vendor_fstab.qcom /vendor/etc/fstab.qcom bind
