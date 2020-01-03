@@ -9,6 +9,9 @@
 
 DEVICE_PATH := device/meizu/m1973
 
+# Assertion
+TARGET_OTA_ASSERT_DEVICE := m1973,meizu16sPro
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
