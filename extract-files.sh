@@ -11,6 +11,8 @@ export DEVICE=m1973
 export DEVICE_COMMON=sm8150-common
 export VENDOR=meizu
 
+export DEVICE_BRINGUP_YEAR=2019
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
