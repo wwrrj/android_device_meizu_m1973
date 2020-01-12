@@ -4,3 +4,7 @@ on init
 
 on early-fs
     mount none /system/etc/vendor_fstab.qcom /vendor/etc/fstab.qcom bind
+
+on post-fs
+    mount none /system/lib/hw/android.hardware.power@1.0-impl.m1973.so /vendor/lib/hw/android.hardware.power@1.0-impl.so bind
+    mount none /system/lib64/hw/android.hardware.power@1.0-impl.m1973.so /vendor/lib64/hw/android.hardware.power@1.0-impl.so bind

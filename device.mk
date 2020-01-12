@@ -34,5 +34,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/nfc,$(TARGET_COPY_OUT_SYSTEM)/etc)
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl.m1973
+
 # Inherit from sm8150-common
 $(call inherit-product, device/meizu/sm8150-common/common.mk)
