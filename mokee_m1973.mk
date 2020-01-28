@@ -46,4 +46,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
     fod.dimming.min=40 \
-    fod.dimming.max=250
+    fod.dimming.max=255
