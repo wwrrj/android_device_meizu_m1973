@@ -11,6 +11,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-mokee
 
+# Charger
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,root/res/images/charger)
+
 # Init
 PRODUCT_PACKAGES += \
     init.target.rc
