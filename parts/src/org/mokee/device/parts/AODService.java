@@ -21,7 +21,7 @@ public class AODService extends Service {
     private static final String TAG = "AODService";
     private static final boolean DEBUG = false;
 
-    private static final long AOD_DELAY_MS = 4000;
+    private static final long AOD_DELAY_MS = 1000;
 
     private SettingObserver mSettingObserver;
     private ScreenReceiver mScreenReceiver;
