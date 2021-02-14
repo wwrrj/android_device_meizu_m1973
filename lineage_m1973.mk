@@ -23,12 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/meizu/m1973/device.mk)
 
 # Inherit some common MoKee stuff.
-$(call inherit-product, vendor/mokee/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.mk.maintainer=XiNGRZ
 
-PRODUCT_NAME := mokee_m1973
+PRODUCT_NAME := lineage_m1973
 PRODUCT_BRAND := meizu
 PRODUCT_DEVICE := m1973
 PRODUCT_MANUFACTURER := meizu

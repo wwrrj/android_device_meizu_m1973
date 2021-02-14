@@ -24,7 +24,7 @@
 
 #include "Power.h"
 
-#define TAP_TO_WAKE_NODE "/dev/mokee.touch@1.0/dt2w"
+#define TAP_TO_WAKE_NODE "/dev/lineage.touch@1.0/dt2w"
 
 namespace android {
 namespace hardware {

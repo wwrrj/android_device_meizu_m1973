@@ -5,21 +5,21 @@
  *
  */
 
-package org.mokee.device.parts;
+package org.lineageos.device.parts;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.UserHandle;
 
-import static mokee.content.Intent.ACTION_INITIALIZE_MK_HARDWARE;
+import static lineageos.content.Intent.ACTION_INITIALIZE_LINEAGE_HARDWARE;
 
 public class Startup extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
         final String action = intent.getAction();
-        if (ACTION_INITIALIZE_MK_HARDWARE.equals(action)) {
+        if (ACTION_INITIALIZE_LINEAGE_HARDWARE.equals(action)) {
             context.startServiceAsUser(
                     new Intent(context, AODService.class),
                     UserHandle.CURRENT);

@@ -5,7 +5,7 @@
  *
  */
 
-package org.mokee.device.parts;
+package org.lineageos.device.parts;
 
 import android.app.Service;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
 
-import org.mokee.internal.util.FileUtils;
+import org.lineageos.internal.util.FileUtils;
 
 public class AODService extends Service {
 
