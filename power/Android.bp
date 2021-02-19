@@ -27,7 +27,6 @@ cc_library_shared {
         "liblog",
         "libhardware",
         "libhidlbase",
-        "libhidltransport",
         "libutils",
         "android.hardware.power@1.0",
     ],
