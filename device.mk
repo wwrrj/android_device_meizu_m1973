@@ -49,6 +49,18 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl.m1973
+    
+# GBoard
+PRODUCT_PACKAGES += \
+    Gboard
 
+# GCamGo
+PRODUCT_PACKAGES += \
+    GCamGo
+    
+# ViaBrowser
+PRODUCT_PACKAGES += \
+    ViaBrowser
+     
 # Inherit from sm8150-common
 $(call inherit-product, device/meizu/sm8150-common/common.mk)
