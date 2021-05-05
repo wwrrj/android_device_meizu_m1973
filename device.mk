@@ -42,10 +42,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/nfc,$(TARGET_COPY_OUT_SYSTEM)/etc)
 
-# Parts
-PRODUCT_PACKAGES += \
-    M1973Parts
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl.m1973
