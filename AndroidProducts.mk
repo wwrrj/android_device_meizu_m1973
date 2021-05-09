@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pallaium_m1973.mk
+    $(LOCAL_DIR)/palladium_m1973.mk
 
 COMMON_LUNCH_CHOICES := \
-    pallaium_m1973-userdebug \
-    pallaium_m1973-user \
-    pallaium_m1973-eng
+    palladium_m1973-userdebug \
+    palladium_m1973-user \
+    palladium_m1973-eng
