@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_m1973.mk
+    $(LOCAL_DIR)/pallaium_m1973.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_m1973-userdebug \
-    lineage_m1973-user \
-    lineage_m1973-eng
+    pallaium_m1973-userdebug \
+    pallaium_m1973-user \
+    pallaium_m1973-eng
