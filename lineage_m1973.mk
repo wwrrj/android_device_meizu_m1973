@@ -42,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := meizu/meizu_16sPro_CN/meizu16sPro:9/PKQ1.190616.001/1572446663:user/release-keys
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sf.lcd_density=400
+    ro.sf.lcd_density=360
 
 PRODUCT_PRODUCT_PROPERTIES += \
     fod.dimming.min=40 \
