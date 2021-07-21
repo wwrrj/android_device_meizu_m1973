@@ -25,9 +25,6 @@ $(call inherit-product, device/meizu/m1973/device.mk)
 # Inherit some common MoKee stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=XiNGRZ
-
 PRODUCT_NAME := lineage_m1973
 PRODUCT_BRAND := meizu
 PRODUCT_DEVICE := m1973
@@ -42,7 +39,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := meizu/meizu_16sPro_CN/meizu16sPro:9/PKQ1.190616.001/1572446663:user/release-keys
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sf.lcd_density=360
+    ro.sf.lcd_density=400
 
 PRODUCT_PRODUCT_PROPERTIES += \
     fod.dimming.min=40 \
